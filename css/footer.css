@@ -1,0 +1,129 @@
+footer {
+  background: #FAFAFA;
+  padding: 85px 0;
+  font-size: 20px;
+  color: #616161;
+}
+footer .map {
+  margin: 37px 0 0;
+}
+footer .h3 {
+  margin: 66px 0 60px;
+  color: #A19178;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Artega", sans-serif;
+  text-transform: uppercase;
+}
+
+.footer-box {
+  padding: 0 47px 0 0;
+  border-right: 1px solid #A19178;
+  margin: 0 38px 0 0;
+}
+.footer-box__title {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0 0 14px;
+  font-family: "Artega", sans-serif;
+  text-transform: uppercase;
+}
+.footer-box .btn {
+  margin: 30px 0 0;
+}
+
+.phone-company {
+  margin: 28px 0 0;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Artega", sans-serif;
+  color: #616161;
+}
+.phone-company:hover {
+  color: #A19178;
+}
+
+.map {
+  width: 100%;
+  height: 403px;
+  border-radius: 20px;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.address-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.address-box svg {
+  fill: #616161;
+  width: 14px;
+  height: 19px;
+  min-width: 14px;
+  margin: 0 14px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-address__bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px 0 0;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.copyright img {
+  margin: 0 8px 0 0;
+}
+
+.copyright-date {
+  margin: 0 40px 0 0;
+}
+
+.developer-link {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #616161;
+  margin: 0 0 0 auto;
+}
+.developer-link:hover {
+  color: #A19178;
+}
+.developer-link img {
+  margin: 0 0 0 10px;
+  max-width: 93px;
+}

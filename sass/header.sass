@@ -1,0 +1,107 @@
+@import "vars"
+
+header
+	padding: 52px 0 41px
+	background: rgba(255, 255, 255, 0.80)
+	backdrop-filter: blur(64px)
+
+.logo
+	max-width: 236px
+	width: 100%
+	@include d-flex
+
+.btn-burger
+	width: 47px
+	height: 36px
+	fill: $blue
+	display: none
+	align-items: center
+	justify-content: center
+	margin: 0 0 0 44px
+
+.language-box
+	.dropdown-menu
+		min-width: auto
+		width: 100%
+		text-transform: uppercase
+		border-radius: 5px
+		padding: 10px 0
+
+.cabinet-box
+	margin: 0 0 0 60px
+	&__avatar
+		@include d-flex
+		overflow: hidden
+		border-radius: 50%
+		width: 50px
+		height: 50px
+		min-width: 50px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&::after
+		margin: 0 0 0 10px
+	&__link
+		svg
+			fill: #fff
+			@include d-flex
+			width: 20px
+			height: 20px
+			min-width: 20px
+			margin: 0 17px 0 0
+		.fill-none
+			fill: none
+			stroke: #fff
+	.dropdown-item
+		&:hover
+			svg
+				fill: $blue
+			.fill-none
+				fill: none
+				stroke: $blue
+
+.nav-menu
+	margin: 0 auto 0 70px
+
+.menu
+	display: flex
+	align-items: flex-start
+	font-size: 20px
+	li
+		margin: 0 18px 0 0
+		&:last-child
+			margin: 0
+		a
+			padding: 0 0 6px
+			color: #A19178
+			border-bottom: 1px solid transparent
+			&.active, &:hover
+				color: $blue
+				border-color: $blue
+
+// fixed-menu
+.fixed-menu
+	position: static
+	top: 0
+	left: 0
+	padding: 56px 56px 64px 63px
+	border-radius: 0px 20px 20px 0px
+	background: #082849
+	width: fit-content
+	&-list
+		max-width: 168px
+	&-link
+		display: flex
+		align-items: center
+		color: #fff
+		&__icon
+			@include d-flex
+			width: 22px
+			height: 20px
+			min-width: 22px
+			fill: #A19178
+		&__text
+				
+
+		
