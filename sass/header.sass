@@ -82,26 +82,60 @@ header
 
 // fixed-menu
 .fixed-menu
-	position: static
+	position: sticky
+	overflow: hidden
 	top: 0
 	left: 0
-	padding: 56px 56px 64px 63px
+	padding: 51px 56px 57.5px 63px
 	border-radius: 0px 20px 20px 0px
 	background: #082849
 	width: fit-content
+	max-width: 135px
+	transition: max-width .3s ease
+	z-index: 10
+	&.active
+		max-width: 311px
+		.fixed-menu-link__text
+			margin: 0 0 0 20px
 	&-list
 		max-width: 168px
+	&-item
+		margin: 0 0 50px
+		&:last-child
+			margin: 0
 	&-link
 		display: flex
 		align-items: center
 		color: #fff
+		font-size: 16px
+		min-height: 40px
+		line-height: normal
+		&:hover
+			color: $accent
 		&__icon
 			@include d-flex
 			width: 22px
 			height: 20px
 			min-width: 22px
 			fill: #A19178
+			position: relative
+			&-value
+				position: absolute
+				z-index: 1
+				left: 11px
+				top: 50%
+				transform: translate(0,-50%)
+				background: #fff
+				border-radius: 50%
+				@include d-flex
+				color: #082849
+				font-size: 10px
+				font-weight: bold
+				width: 15px
+				height: 15px
+				min-width: 15px
 		&__text
-				
+			min-width: 129px
+			margin: 0 0 0 60px
+			transition: .3s ease
 
-		

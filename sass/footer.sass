@@ -1,10 +1,21 @@
 @import "vars"
 
 footer
-	background: #FAFAFA
+	margin: 65px 0 0
 	padding: 85px 0
 	font-size: 20px
 	color: #616161
+	position: relative
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		right: 0
+		top: 0
+		background: #FAFAFA
+		height: 100%
+		width: calc(100% + 1000px)
 	.map
 		margin: 37px 0 0
 	.h3
@@ -14,6 +25,7 @@ footer
 		font-weight: 500
 		font-family: $title-font
 		text-transform: uppercase	
+	
 
 .footer-box
 	padding: 0 47px 0 0

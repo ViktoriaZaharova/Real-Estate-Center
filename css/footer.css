@@ -1,8 +1,20 @@
 footer {
-  background: #FAFAFA;
+  margin: 65px 0 0;
   padding: 85px 0;
   font-size: 20px;
   color: #616161;
+  position: relative;
+  z-index: 1;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  background: #FAFAFA;
+  height: 100%;
+  width: calc(100% + 1000px);
 }
 footer .map {
   margin: 37px 0 0;
