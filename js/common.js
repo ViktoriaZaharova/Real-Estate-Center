@@ -1,9 +1,21 @@
 // $('[name="phone"]').mask('+7 (999) 999-99-99');
 
-$('.fixed-menu').hover(function () {
-	$(this).toggleClass('active');
+$('.btn-burger').on('click', function () {
+	$('.fixed-menu').css('right', 0);
 });
 
+$('.fixed-menu__close').on('click', function () {
+	$('.fixed-menu').css('right', '-100%');
+});
+
+$('.btn-filter').on('click', function (e) {
+	e.preventDefault();
+	$('.filter-section-wrapper').fadeIn();
+});
+
+$('.filter-section-wrapper__close').on('click', function () {
+	$('.filter-section-wrapper').fadeOut();
+});
 
 $(function () {
 	var handle = $(".custom-handle1 span");

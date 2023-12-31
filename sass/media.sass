@@ -1,16 +1,279 @@
-/*==========  Desktop First  ==========*/
+/*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1370px)
+	.copyright-date
+		margin: 0 10px 0 0
+
+	.footer-box
+		margin: 0
+		padding: 0 20px 0 0
+
+	.footer-address__bottom
+		font-size: 16px
+		margin: 30px 0 0
+
 @media only screen and (max-width: 1200px)
+	.form-filter
+		.form-column
+			max-width: 49%
+			&:nth-child(3), &:nth-child(4)
+				max-width: 49%
+
+	.layout-card
+		margin: 0 22px 22px 0
+		width: 400px
+		font-size: 16px
+		&__body
+			padding: 0 12px 20px
+		&__footer
+			padding: 14px 12px 4px
+
+	.footer-box__title
+		font-size: 32px
+		margin: 0 0 20px
+
+	.footer-address
+		margin: 59px 0 0
+
+	footer
+		font-size: 16px
+		.address-box
+			font-size: 20px
+		.h3
+			margin: 42px 0 46px
+			font-size: 32px
+
+	.phone-company
+		font-size: 32px
+		margin: 21px 0 0
+
+	.footer-box
+		padding: 0
+		border: none	
 
 @media only screen and (max-width: 992px)
+	.fixed-menu
+		position: fixed
+		right: -100%
+		top: 0
+		left: auto
+		border-radius: 0
+		height: 100%
+		overflow-y: auto
+		max-width: 280px
+		padding: 40px 30px
+		&__close
+			display: flex
+		.nav-menu
+			display: block
+			margin: 0 0 20px
+			width: 100%
+			padding: 0 0 20px
+			border-bottom: 1px solid #fff
+		.menu
+			flex-wrap: wrap
+			li
+				width: 100%
+				margin: 0 0 20px
+				&:last-child
+					margin: 0
+			a
+				color: #fff
+
+				&.active
+					color: #A19178
+					border-color: #A19178
+
+	.fixed-menu-item
+		margin: 0 0 30px
+		&:last-child
+			margin: 0
+
+	.fixed-menu-list
+		max-width: none		
+
+	.btn-burger
+		display: flex
+
+	.menu
+		font-size: 18px
+
+	.nav-menu
+		display: none
+
+	.cabinet-box
+		margin: 0 0 0 42px
+
+	header
+		padding: 40px 0 57px
+		.logo
+			margin: 0 auto 0 0
+
+	.wrapper-home
+		margin: 0
+
+	.layout-wrapper
+		justify-content: space-between
+
+	.layout-card
+		width: calc(50% - 10px)
+		margin-right: 0
+
+	.price
+		font-size: 26px
 
 @media only screen and (max-width: 768px)
+	.card-product
+		width: 50%
+		max-width: none
+		margin: 0 0 40px
+		padding: 0 10px
+
+	.home-wrapper
+		margin: 0 -10px
+		width: fit-content
+
+	.filter-section-wrapper
+		padding: 20px
+
+	.form-filter
+		.form-column
+			margin: 0 auto 20px	0
+
+	.btn-filter
+		display: flex
+
+	.filter-section
+		margin: 0 0 32px
+
+	.filter-section-wrapper
+		display: none
+		position: fixed
+		left: 0
+		top: 0
+		height: 100%
+		width: 100%
+		z-index: 7
+		overflow-y: auto
+		&__close
+			display: flex
+
+	.checkbox-size
+		font-size: 16px
+		padding: 10px 15px
+
+	.list-checkbox li
+		margin: 0 10px 5px 0
+
+	.radio-custom
+		margin: 0 10px 0 0
+		width: 24px
+		height: 24px
+		min-width: 24px
+		&::before
+			width: 10px
+			height: 10px
+
+	.mb-50
+		margin-bottom: 42px
+
+	.layout-card
+		font-size: 16px
+		&__img
+			padding: 19px 12px 21px
+			height: 170px
+		&__description
+			display: none
+		&__title
+			font-size: 16px
+		.price-wrapper
+			margin: 0 0 14px
+		.list-characteristics
+			display: none
+		.btn-group
+			flex-direction: column
+			align-items: flex-start
+			.btn
+				margin: 0 0 18px
+				font-size: 14px
+				height: 37px
+				padding: 10px
+
+	.price
+		font-size: 20px
+
+	.layouts-variables
+		margin: 30px 0 0
+
+	footer
+		margin: 50px 0 0
+		padding: 48px 0
 
 @media only screen and (max-width: 576px)
+	.logo
+		max-width: 48px
+
+	h1
+		font-size: 24px
+
+	.card-product
+		min-height: auto
+		&__img
+			height: 185px
+		&__body
+			padding: 15px 0 0
+		&__title
+			margin: 0
+		.btn
+			margin: 15px 0 0
+		.box-text
+			display: none
+
+	.btn
+		font-size: 16px
+		height: 40px
+
+	.list-labels
+		padding: 11px 23px
+
+	.form-filter
+		.form-column
+			max-width: 100%
+			&:nth-child(3), &:nth-child(4)
+				max-width: 100%
+
+	.developer-link
+		margin: 20px 0 0
+		width: 100%			
 
 @media only screen and (max-width: 480px)
 
 @media only screen and (max-width: 420px)
+	.btn-burger
+		margin: 0 0 0 20px
+		width: 30px
+		height: 26px
 
-@media only screen and (max-width: 370px)	
+	.cabinet-box
+		margin: 0 0 0 20px
+
+	.phone-company
+		font-size: 24px
+
+	footer
+		.h3
+			font-size: 24px
+
+	.footer-box__title
+		font-size: 24px				
+
+@media only screen and (min-width: 992px)
+	.fixed-menu
+		&-link
+			&__text
+				margin: 0 0 0 80px
+		&:hover
+			max-width: 311px
+			.fixed-menu-link__text
+				margin: 0 0 0 20px

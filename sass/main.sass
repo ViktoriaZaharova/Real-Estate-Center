@@ -1,9 +1,14 @@
 @import 'vars'
 
 // home	
+.home-wrapper
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+
 .card-product
 	width: 275px
-	min-height: 477px
 	position: relative
 	z-index: 1
 	margin: 0 30px 40px 0
@@ -41,9 +46,9 @@
 	padding: 13px 18px
 	font-size: 10px
 	&__item
-		margin: 0 15px 10px 0
+		margin: 0 15px 7px 0
 		&:last-child
-			margin: 0 0 10px
+			margin: 0 0 7px
 	&__link
 		padding: 5px 10px
 		color: #fff
@@ -62,6 +67,29 @@
 	background: #FAFAFA
 	width: 100%
 	padding: 40px
+	position: relative
+	z-index: 1
+	&__close
+		position: absolute
+		right: 10px
+		top: 10px
+		width: 24px
+		height: 24px
+		cursor: pointer
+		display: none
+		&::before, &::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 10px
+			background: #fff
+			border-radius: 2px
+			width: 2px
+			height: 100%
+		&::before
+			transform: rotate(45deg)
+		&::after
+			transform: rotate(135deg)
 
 .form-filter
 	width: 100%
@@ -72,15 +100,14 @@
 		height: 58px
 		font-size: 20px
 
-.form-column
-	max-width: 275px
-	width: 100%
-	margin: 0 auto 0 0
-	&:last-child
-		margin: 0
-	&:nth-child(3), &:nth-child(4)
-		max-width: 378px
-						
+	.form-column
+		max-width: 275px
+		width: 100%
+		margin: 0 auto 40px 0
+		&:last-child
+			margin: 0 0 40px
+		&:nth-child(3), &:nth-child(4)
+			max-width: 378px
 
 .form-group
 	width: 100%
@@ -93,6 +120,18 @@
 		font-size: 16px
 		font-weight: normal
 		line-height: normal
+
+.link-all-option
+	margin: 0 auto
+	display: flex
+	align-items: center
+	justify-content: center
+	svg
+		width: 18px
+		height: 9px
+		margin: 0 0 0 10px
+		@include d-flex
+		stroke: $accent
 
 // layouts
 .nav-tabs-layouts
@@ -114,9 +153,14 @@
 		&.active
 			fill: $accent
 
+.layout-wrapper
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap			
+
 .layout-card
 	width: 428px
-	min-height: 669px
 	border-radius: 20px
 	border: 1px solid #A19178
 	margin: 0 70px 70px 0
