@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Real Estate Center</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex flex-wrap align-items-center">
+					<a href="index.html" class="logo">
+						<img src="img/logo.svg" class="d-none d-sm-block" alt="">
+						<img src="img/logo-mobile.svg" class="d-block d-sm-none" alt="">
+					</a>
+					<nav class="nav nav-menu">
+						<ul class="menu my-ul">
+							<li class="menu-item"><a href="#" class="menu-link active">Apartment</a></li>
+							<li class="menu-item"><a href="#" class="menu-link">News</a></li>
+							<li class="menu-item"><a href="#" class="menu-link">Documentation</a></li>
+						</ul>
+					</nav>
+
+					<div class="language-box dropdown">
+						<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">RU</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">Ru</a>
+							<a href="#" class="dropdown-item">En</a>
+						</div>
+					</div>
+
+					<div class="cabinet-box dropdown">
+						<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+							<span class="cabinet-box__avatar"><img src="img/avatar-user.png" alt=""></span>
+						</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item cabinet-box__link">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#user-icon"></use>
+								</svg>
+								<span>Account</span>
+							</a>
+							<a href="#" class="dropdown-item cabinet-box__link">
+								<svg class="svg-icon fill-none">
+									<use xlink:href="img/sprite.svg#exit-icon"></use>
+								</svg>
+								<span>Log out</span>
+							</a>
+							<a href="#" class="dropdown-item cabinet-box__link">
+								<span>back to main page</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="btn-burger">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#burger"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="breadcrumb-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav aria-label="breadcrumb" class="nav-breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Main page</a></li>
+							<li class="breadcrumb-item active" aria-current="page">My requests for objects</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+
+		<div class="fixed-menu">
+			<div class="fixed-menu__close"></div>
+			<nav class="nav nav-menu">
+				<ul class="menu my-ul">
+					<li class="menu-item"><a href="#" class="menu-link active">Apartment</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">News</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">Documentation</a></li>
+				</ul>
+			</nav>
+			<ul class="fixed-menu-list my-ul">
+				<li class="fixed-menu-item">
+					<a href="objects.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon1"></use>
+							</svg></span>
+						<span class="fixed-menu-link__text">My requests <br>for objects</span>
+					</a>
+				</li>
+				<li class="fixed-menu-item">
+					<a href="training-materials.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon2"></use>
+							</svg></span>
+						<span class="fixed-menu-link__text">Training materials</span>
+					</a>
+				</li>
+				<li class="fixed-menu-item">
+					<a href="promotional-materials.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon3"></use>
+							</svg>
+						</span>
+						<span class="fixed-menu-link__text">Promotional materials</span>
+					</a>
+				</li>
+				<li class="fixed-menu-item">
+					<a href="events.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon4"></use>
+							</svg>
+							<span class="fixed-menu-link__icon-value">3</span>
+						</span>
+						<span class="fixed-menu-link__text">Calendar <br>of events</span>
+					</a>
+				</li>
+				<li class="fixed-menu-item">
+					<a href="documentation.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon5"></use>
+							</svg></span>
+						<span class="fixed-menu-link__text">Documentation</span>
+					</a>
+				</li>
+				<li class="fixed-menu-item">
+					<a href="contacts.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon6"></use>
+							</svg></span>
+						<span class="fixed-menu-link__text">Contacts</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="wrapper-content">
+
+			<section class="objects-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h1>My requests for objects</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 d-flex flex-wrap align-items-center mb-60">
+							<ul class="nav nav-tabs nav-tabs-my" role="tablist">
+								<li class="nav-item" role="presentation">
+									<button class="nav-link active" id="3-tab" data-bs-toggle="tab" data-bs-target="#3-tab-pane"
+										type="button" role="tab" aria-controls="3-tab-pane" aria-selected="true">
+										Аctive requests</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="4-tab" data-bs-toggle="tab" data-bs-target="#4-tab-pane" type="button"
+										role="tab" aria-controls="4-tab-pane" aria-selected="false">
+										Аrchived requests</button>
+								</li>
+							</ul>
+							<div class="sorting-box">
+								<p>sort by</p>
+								<select name="select" class="select-my">
+									<option value="default">default</option>
+									<option value="default">default 2</option>
+									<option value="default">default 3</option>
+								</select>
+							</div>
+
+							<div class="view-tabs">
+								<p>view</p>
+
+								<ul class="nav nav-tabs nav-tabs-layouts nav-tabs-layouts-v2" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button class="nav-link active" id="1-tab" data-bs-toggle="tab" data-bs-target="#1-tab-pane"
+											type="button" role="tab" aria-controls="1-tab-pane" aria-selected="true">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#tab-icon1"></use>
+											</svg></button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="2-tab" data-bs-toggle="tab" data-bs-target="#2-tab-pane" type="button"
+											role="tab" aria-controls="2-tab-pane" aria-selected="false">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#tab-icon3"></use>
+											</svg></button>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="tab-content">
+								<div class="tab-pane fade show active" id="3-tab-pane" role="tabpanel" aria-labelledby="3-tab"
+									tabindex="0">
+									<div class="tab-content">
+										<div class="tab-pane fade" id="1-tab-pane" role="tabpanel" aria-labelledby="1-tab"
+											tabindex="0">
+											<div class="row">
+												<div class="col-12">
+													<div class="layout-wrapper">
+														<div class="layout-card layout-card-v2">
+															<div class="layout-card__head">
+																<div class="h3 color-accent">№121 / 12.04.2023</div>
+															</div>
+															<a href="layout.html" class="layout-card__img"><img src="img/layout1.png" alt=""></a>
+															<div class="layout-card__body">
+																<a href="layout.html" class="layout-card__title">Evans Residential Building</a>
+																<div class="layout-card__description">
+																	<p>building 13</p>
+																</div>
+															</div>
+															<div class="layout-card__footer">
+																<ul class="list-characteristics my-ul">
+																	<li>
+																		<p>Studio</p>
+																	</li>
+																	<li>
+																		<p>6/10 level</p>
+																	</li>
+																	<li>
+																		<p>35 m<sup>2</sup></p>
+																	</li>
+																	<li>
+																		<p>1Q 2023</p>
+																	</li>
+																</ul>
+																<div class="price-wrapper">
+																	<div class="price">270 000 USD</div>
+																</div>
+																<div class="btn-group">
+																	<a href="#" class="btn btn-light-green">registration of the request</a>
+																	<a href="layout.html" class="btn btn-accent btn-view"><span>review history</span>
+																		<svg class="svg-icon">
+																			<use xlink:href="img/sprite.svg#view-icon"></use>
+																		</svg>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="layout-card layout-card-v2">
+															<div class="layout-card__head">
+																<div class="h3 color-accent">№121 / 12.04.2023</div>
+															</div>
+															<a href="layout.html" class="layout-card__img"><img src="img/layout1.png" alt=""></a>
+															<div class="layout-card__body">
+																<a href="layout.html" class="layout-card__title">Evans Residential Building</a>
+																<div class="layout-card__description">
+																	<p>building 13</p>
+																</div>
+															</div>
+															<div class="layout-card__footer">
+																<ul class="list-characteristics my-ul">
+																	<li>
+																		<p>Studio</p>
+																	</li>
+																	<li>
+																		<p>6/10 level</p>
+																	</li>
+																	<li>
+																		<p>35 m<sup>2</sup></p>
+																	</li>
+																	<li>
+																		<p>1Q 2023</p>
+																	</li>
+																</ul>
+																<div class="price-wrapper">
+																	<div class="price">270 000 USD</div>
+																</div>
+																<div class="btn-group">
+																	<a href="#" class="btn btn-light-green">registration of the request</a>
+																	<a href="layout.html" class="btn btn-accent btn-view"><span>review history</span>
+																		<svg class="svg-icon">
+																			<use xlink:href="img/sprite.svg#view-icon"></use>
+																		</svg>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="layout-card layout-card-v2">
+															<div class="layout-card__head">
+																<div class="h3 color-accent">№121 / 12.04.2023</div>
+															</div>
+															<a href="layout.html" class="layout-card__img"><img src="img/layout1.png" alt=""></a>
+															<div class="layout-card__body">
+																<a href="layout.html" class="layout-card__title">Evans Residential Building</a>
+																<div class="layout-card__description">
+																	<p>building 13</p>
+																</div>
+															</div>
+															<div class="layout-card__footer">
+																<ul class="list-characteristics my-ul">
+																	<li>
+																		<p>Studio</p>
+																	</li>
+																	<li>
+																		<p>6/10 level</p>
+																	</li>
+																	<li>
+																		<p>35 m<sup>2</sup></p>
+																	</li>
+																	<li>
+																		<p>1Q 2023</p>
+																	</li>
+																</ul>
+																<div class="price-wrapper">
+																	<div class="price">270 000 USD</div>
+																</div>
+																<div class="btn-group">
+																	<a href="#" class="btn btn-light-red">not reviewed</a>
+																	<a href="layout.html" class="btn btn-accent btn-view"><span>review history</span>
+																		<svg class="svg-icon">
+																			<use xlink:href="img/sprite.svg#view-icon"></use>
+																		</svg>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="layout-card layout-card-v2">
+															<div class="layout-card__head">
+																<div class="h3 color-accent">№121 / 12.04.2023</div>
+															</div>
+															<a href="layout.html" class="layout-card__img"><img src="img/layout1.png" alt=""></a>
+															<div class="layout-card__body">
+																<a href="layout.html" class="layout-card__title">Evans Residential Building</a>
+																<div class="layout-card__description">
+																	<p>building 13</p>
+																</div>
+															</div>
+															<div class="layout-card__footer">
+																<ul class="list-characteristics my-ul">
+																	<li>
+																		<p>Studio</p>
+																	</li>
+																	<li>
+																		<p>6/10 level</p>
+																	</li>
+																	<li>
+																		<p>35 m<sup>2</sup></p>
+																	</li>
+																	<li>
+																		<p>1Q 2023</p>
+																	</li>
+																</ul>
+																<div class="price-wrapper">
+																	<div class="price">270 000 USD</div>
+																</div>
+																<div class="btn-group">
+																	<a href="#" class="btn btn-light-red">not reviewed</a>
+																	<a href="layout.html" class="btn btn-accent btn-view"><span>review history</span>
+																		<svg class="svg-icon">
+																			<use xlink:href="img/sprite.svg#view-icon"></use>
+																		</svg>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="layout-card layout-card-v2">
+															<div class="layout-card__head">
+																<div class="h3 color-accent">№121 / 12.04.2023</div>
+															</div>
+															<a href="layout.html" class="layout-card__img"><img src="img/layout1.png" alt=""></a>
+															<div class="layout-card__body">
+																<a href="layout.html" class="layout-card__title">Evans Residential Building</a>
+																<div class="layout-card__description">
+																	<p>building 13</p>
+																</div>
+															</div>
+															<div class="layout-card__footer">
+																<ul class="list-characteristics my-ul">
+																	<li>
+																		<p>Studio</p>
+																	</li>
+																	<li>
+																		<p>6/10 level</p>
+																	</li>
+																	<li>
+																		<p>35 m<sup>2</sup></p>
+																	</li>
+																	<li>
+																		<p>1Q 2023</p>
+																	</li>
+																</ul>
+																<div class="price-wrapper">
+																	<div class="price">270 000 USD</div>
+																</div>
+																<div class="btn-group">
+																	<a href="#" class="btn btn-light-green">registration of the request</a>
+																	<a href="layout.html" class="btn btn-accent btn-view"><span>review history</span>
+																		<svg class="svg-icon">
+																			<use xlink:href="img/sprite.svg#view-icon"></use>
+																		</svg>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="layout-card layout-card-v2">
+															<div class="layout-card__head">
+																<div class="h3 color-accent">№121 / 12.04.2023</div>
+															</div>
+															<a href="layout.html" class="layout-card__img"><img src="img/layout1.png" alt=""></a>
+															<div class="layout-card__body">
+																<a href="layout.html" class="layout-card__title">Evans Residential Building</a>
+																<div class="layout-card__description">
+																	<p>building 13</p>
+																</div>
+															</div>
+															<div class="layout-card__footer">
+																<ul class="list-characteristics my-ul">
+																	<li>
+																		<p>Studio</p>
+																	</li>
+																	<li>
+																		<p>6/10 level</p>
+																	</li>
+																	<li>
+																		<p>35 m<sup>2</sup></p>
+																	</li>
+																	<li>
+																		<p>1Q 2023</p>
+																	</li>
+																</ul>
+																<div class="price-wrapper">
+																	<div class="price">270 000 USD</div>
+																</div>
+																<div class="btn-group">
+																	<a href="#" class="btn btn-light-green">registration of the request</a>
+																	<a href="layout.html" class="btn btn-accent btn-view"><span>review history</span>
+																		<svg class="svg-icon">
+																			<use xlink:href="img/sprite.svg#view-icon"></use>
+																		</svg>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<div class="tab-pane fade show active" id="2-tab-pane" role="tabpanel" aria-labelledby="2-tab" tabindex="0">
+											<div class="row">
+												<div class="col-12">
+													<div class="table-layout">
+														<div class="table-layout__head">
+															<div class="tr">
+																<div class="td">№</div>
+																<div class="td">Client</div>
+																<div class="td">The cost of the request</div>
+																<div class="td">Request status</div>
+																<div class="td">Responsible person</div>
+																<div class="td"></div>
+															</div>
+														</div>
+														<div class="table-layout__body">
+															<div class="tr">
+																<div class="td" data-table="№">
+																	<p>124</p>
+																</div>
+																<div class="td" data-table="Client">
+																	<p>Ivanov I.A.</p>
+																</div>
+																<div class="td" data-table="The cost of the request">
+																	<p>86 000 USD</p>
+																</div>
+																<div class="td color-light-green" data-table="Request status">
+																	<p>request under review</p>
+																</div>
+																<div class="td" data-table="Responsible person">
+																	<p>Sergeenko D.S.</p>
+																</div>
+																<div class="td">
+																	<a href="#" class="btn btn-accent btn-view"><span>more</span>
+																		<svg class="svg-icon">
+																			<use xlink:href="img/sprite.svg#view-icon"></use>
+																		</svg></a>
+																</div>
+															</div>
+															<div class="tr">
+																<div class="td" data-table="№">
+																	<p>235</p>
+																</div>
+																<div class="td" data-table="Client">
+																	<p>Ivanov I.A.</p>
+																</div>
+																<div class="td" data-table="The cost of the request">
+																	<p>86 000 USD</p>
+																</div>
+																<div class="td color-light-red" data-table="Request status">
+																	<p>not reviewed</p>
+																</div>
+																<div class="td" data-table="Responsible person">
+																	<p>Sergeenko D.S.</p>
+																</div>
+																<div class="td">
+																	<a href="#" class="btn btn-accent btn-view"><span>more</span>
+																		<svg class="svg-icon">
+																			<use xlink:href="img/sprite.svg#view-icon"></use>
+																		</svg></a>
+																</div>
+															</div>
+															<div class="tr">
+																<div class="td" data-table="№">
+																	<p>047</p>
+																</div>
+																<div class="td" data-table="Client">
+																	<p>Ivanov I.A.</p>
+																</div>
+																<div class="td" data-table="The cost of the request">
+																	<p>86 000 USD</p>
+																</div>
+																<div class="td color-light-green" data-table="Request status">
+																	<p>request under review</p>
+																</div>
+																<div class="td" data-table="Responsible person">
+																	<p>Sergeenko D.S.</p>
+																</div>
+																<div class="td">
+																	<a href="#" class="btn btn-accent btn-view"><span>more</span>
+																		<svg class="svg-icon">
+																			<use xlink:href="img/sprite.svg#view-icon"></use>
+																		</svg></a>
+																</div>
+															</div>
+															<div class="tr">
+																<div class="td" data-table="№">
+																	<p>681</p>
+																</div>
+																<div class="td" data-table="Client">
+																	<p>Ivanov I.A.</p>
+																</div>
+																<div class="td" data-table="The cost of the request">
+																	<p>86 000 USD</p>
+																</div>
+																<div class="td color-light-green" data-table="Request status">
+																	<p>request under review</p>
+																</div>
+																<div class="td" data-table="Responsible person">
+																	<p>Sergeenko D.S.</p>
+																</div>
+																<div class="td">
+																	<a href="#" class="btn btn-accent btn-view"><span>more</span>
+																		<svg class="svg-icon">
+																			<use xlink:href="img/sprite.svg#view-icon"></use>
+																		</svg></a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="table-layout-total">
+														<div class="h3">Total amount</div>
+														<div class="total-sum">344 000 USD</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="4-tab-pane" role="tabpanel" aria-labelledby="4-tab" tabindex="0">
+									2
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+
+
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-xl-6">
+							<div class="footer-box">
+								<div class="footer-box__title">Come to our office</div>
+								<div class="box-text">
+									<p>Our specialists will be happy to tell you about the project, help you with choosing an apartment.
+										Let your dreams come
+										true!</p>
+								</div>
+								<a href="tel:(555) 654-3210" class="phone-company">(555) 654-3210</a>
+								<div class="h3">or</div>
+								<div class="footer-box__title">write to us</div>
+								<div class="box-text">
+									<p>Our specialists will contact you as soon as possible <br>and will be happy to answer all your
+										questions
+									</p>
+								</div>
+								<a href="contacts.html" class="btn btn-md btn-font btn-accent">contact us</a>
+							</div>
+						</div>
+						<div class="col-12 col-xl-6">
+							<div class="footer-address">
+								<div class="address-box">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#location"></use>
+									</svg>
+									<span>45 BROADWAY STE 530, NEW YORK, NY 10006-4012</span>
+								</div>
+								<div class="map">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.5259396201322!2d-74.01557352408241!3d40.706437137956385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a113c1507a3%3A0x53dbcbf433cd2193!2zNDUgQnJvYWR3YXkgIzUzMCwgTmV3IFlvcmssIE5ZIDEwMDA2LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1703367259589!5m2!1sru!2sua"
+										style="border:0;" allowfullscreen="" loading="lazy"
+										referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+								<div class="footer-address__bottom">
+									<div class="copyright">
+										<div class="copyright-date">2019-2023</div>
+										<img src="img/copyright.svg" alt="">
+										<span>all rights reserved</span>
+									</div>
+
+									<a href="https://elevenlab.ru" target="_blank" class="developer-link">
+										<span>developed by</span>
+										<img src="img/elevenlab.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<!-- <script src="js/jquery.maskedinput.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

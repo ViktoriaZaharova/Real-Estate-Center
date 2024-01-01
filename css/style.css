@@ -253,6 +253,15 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   color: #fff;
 }
 
+.btn-light-red {
+  color: #A17878;
+  background: #FCF1F1;
+}
+.btn-light-red:hover {
+  background: #082849;
+  color: #fff;
+}
+
 .btn-border-blue {
   border: 1px solid #082849;
   color: #082849;
@@ -366,14 +375,30 @@ h1 {
   width: 100%;
   font-size: 24px;
   font-weight: 500;
+  line-height: normal;
   font-family: "Artega", sans-serif;
   margin: 0 0 30px;
   text-transform: uppercase;
   color: #082849;
 }
 
+.h3 {
+  width: 100%;
+  margin: 0;
+  font-weight: normal;
+  font-size: 24px;
+}
+
 a.color-accent {
   color: #A19178;
+}
+
+.color-light-green {
+  color: #78A192;
+}
+
+.color-light-red {
+  color: #A17878;
 }
 
 .no-fill {
@@ -428,6 +453,10 @@ a.color-accent {
 
 .mb-50 {
   margin-bottom: 50px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
 }
 
 .sorting-box {
@@ -677,4 +706,70 @@ a.color-accent {
 }
 .checkbox-size input:checked + .checkbox-size__text {
   color: #fff;
+}
+
+.breadcrumb-section {
+  width: 100%;
+  margin: 7px 0 36px;
+}
+
+.breadcrumb {
+  color: #A19178;
+  margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 16px;
+}
+.breadcrumb a {
+  color: #A19178;
+}
+.breadcrumb a:hover {
+  color: #082849;
+}
+
+.breadcrumb-item.active {
+  color: #A19178;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding: 0;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  padding: 0;
+  margin: 0 6px;
+  border: none;
+  color: #A19178;
+  font-family: "SFProDisplay", sans-serif;
+}
+
+.nav-tabs-my {
+  border: none;
+  border-radius: 0;
+  font-size: 24px;
+}
+.nav-tabs-my .nav-item {
+  margin: 0 20px 0 0;
+}
+.nav-tabs-my .nav-item:last-child {
+  margin: 0;
+}
+.nav-tabs-my .nav-link {
+  padding: 0 0 5px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid transparent;
+  color: #A19178;
+}
+.nav-tabs-my .nav-link.active {
+  color: #082849;
+  border-color: #A19178;
+  font-weight: bold;
 }

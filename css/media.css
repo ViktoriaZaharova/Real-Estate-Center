@@ -1,5 +1,37 @@
 /*==========	Desktop First	==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1700px) {
+  .table-layout {
+    font-size: 16px;
+  }
+  .table-layout .td {
+    padding: 0 20px;
+  }
+  .table-layout .td:first-child {
+    width: 100px;
+  }
+  .table-layout .td:nth-child(2) {
+    width: 180px;
+  }
+  .table-layout .td:nth-child(3) {
+    width: 200px;
+  }
+  .table-layout .td:nth-child(4) {
+    width: 230px;
+  }
+  .table-layout__head {
+    margin: 0 0 20px;
+  }
+  .table-layout-total {
+    margin: 30px 0 0;
+    font-size: 20px;
+    padding: 0;
+  }
+  .table-layout-total .h3 {
+    font-size: 20px;
+    margin: 0 20px 0 0;
+  }
+}
 @media only screen and (max-width: 1370px) {
   .copyright-date {
     margin: 0 10px 0 0;
@@ -55,6 +87,50 @@
   .footer-box {
     padding: 0;
     border: none;
+  }
+  .table-layout .tr {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .table-layout .td {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 0 10px;
+  }
+  .table-layout .td::after {
+    display: none;
+  }
+  .table-layout .td:before {
+    content: attr(data-table);
+    display: inline-block;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+  .table-layout .td:first-child, .table-layout .td:nth-child(2), .table-layout .td:nth-child(3), .table-layout .td:nth-child(4), .table-layout .td:nth-last-child(2), .table-layout .td:last-child {
+    width: 33.33%;
+  }
+  .table-layout .td:last-child {
+    margin: 0;
+  }
+  .table-layout .td:last-child::before {
+    display: none;
+  }
+  .table-layout__head {
+    display: none;
+  }
+  .table-layout__body .tr {
+    padding: 10px 0;
+  }
+  .nav-tabs-my {
+    font-size: 18px;
+  }
+  .mb-60 {
+    margin-bottom: 40px;
+  }
+  .objects-section h1 {
+    margin: 0 0 30px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -250,6 +326,16 @@
     margin: 50px 0 0;
     padding: 48px 0;
   }
+  .objects-section .nav-tabs-my {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .view-tabs {
+    margin: 0 0 0 auto;
+  }
+  .nav-tabs-my {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .logo {
@@ -257,6 +343,9 @@
   }
   h1 {
     font-size: 24px;
+  }
+  .h3 {
+    font-size: 20px;
   }
   .card-product {
     min-height: auto;
@@ -293,6 +382,16 @@
     margin: 20px 0 0;
     width: 100%;
   }
+  .table-layout .td:first-child, .table-layout .td:nth-child(2), .table-layout .td:nth-child(3), .table-layout .td:nth-child(4), .table-layout .td:nth-last-child(2), .table-layout .td:last-child {
+    width: 50%;
+  }
+  .view-tabs {
+    margin: 10px 0 0;
+    width: 100%;
+  }
+  .view-tabs .nav-tabs {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 420px) {
   .btn-burger {
@@ -311,6 +410,9 @@
   }
   .footer-box__title {
     font-size: 24px;
+  }
+  .layout-card {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 992px) {

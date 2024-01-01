@@ -154,7 +154,7 @@ button, .btn
 .btn-lg
 	height: 64px
 	padding: 20px
-	font-size: 20px	
+	font-size: 20px
 
 .btn-font
 	font-family: $btn-font
@@ -169,6 +169,13 @@ button, .btn
 .btn-light-green
 	background: #F1FCF8
 	color: rgba(120, 161, 146, 1)
+	&:hover
+		background: $blue
+		color: #fff
+
+.btn-light-red
+	color: #A17878
+	background: #FCF1F1
 	&:hover
 		background: $blue
 		color: #fff
@@ -198,10 +205,10 @@ button, .btn
 	width: 100%
 	display: none
 	svg
-		fill: #fff	
+		fill: #fff
 		width: 22px
 		height: 20px
-		margin: 0 0 0 10px	
+		margin: 0 0 0 10px
 
 .btn-group
 	width: 100%
@@ -260,16 +267,29 @@ h1
 	width: 100%
 	font-size: 24px
 	font-weight: 500
+	line-height: normal
 	font-family: $title-font
 	margin: 0 0 30px
 	text-transform: uppercase
 	color: $blue
 
+.h3
+	width: 100%
+	margin: 0
+	font-weight: normal
+	font-size: 24px	
+
 a.color-accent
 	color: $accent
-	
+
+.color-light-green
+	color: #78A192
+
+.color-light-red
+	color: #A17878		
+
 .no-fill
-	fill: none	
+	fill: none
 
 .dropdown-toggle
 	display: flex
@@ -305,6 +325,9 @@ a.color-accent
 
 .mb-50
 	margin-bottom: 50px
+
+.mb-60
+	margin-bottom: 60px	
 
 .sorting-box
 	color: #686868
@@ -489,3 +512,51 @@ a.color-accent
 			+ .checkbox-size__text
 				color: #fff
 
+.breadcrumb-section
+	width: 100%
+	margin: 7px 0 36px
+
+.breadcrumb
+	color: $accent
+	margin: 0
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	font-size: 16px
+	a
+		color: $accent
+		&:hover
+			color: $blue
+
+.breadcrumb-item.active
+	color: $accent		
+
+.breadcrumb-item+.breadcrumb-item
+	padding: 0
+	&::before
+		content: '>'
+		padding: 0
+		margin: 0 6px
+		border: none
+		color: $accent
+		font-family: $btn-font
+
+.nav-tabs-my
+	border: none
+	border-radius: 0
+	font-size: 24px
+	.nav-item
+		margin: 0 20px 0 0
+		&:last-child
+			margin: 0
+	.nav-link
+		padding: 0 0 5px 
+		border: none
+		border-radius: 0
+		border-bottom: 1px solid transparent
+		color: $accent
+		&.active
+			color: $blue
+			border-color: $accent		
+			font-weight: bold

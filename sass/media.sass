@@ -1,6 +1,30 @@
 /*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1700px)
+	.table-layout
+		font-size: 16px
+		.td
+			padding: 0 20px
+			&:first-child
+				width: 100px
+			&:nth-child(2)
+				width: 180px
+			&:nth-child(3)
+				width: 200px
+			&:nth-child(4)
+				width: 230px
+		&__head
+			margin: 0 0 20px		
+					
+	.table-layout-total
+		margin: 30px 0 0
+		font-size: 20px
+		padding: 0
+		.h3
+			font-size: 20px
+			margin: 0 20px 0 0				
+
 @media only screen and (max-width: 1370px)
 	.copyright-date
 		margin: 0 10px 0 0
@@ -50,7 +74,44 @@
 
 	.footer-box
 		padding: 0
-		border: none	
+		border: none
+
+	.table-layout
+		.tr
+			flex-wrap: wrap
+		.td
+			flex-wrap: wrap
+			margin: 0 0 10px
+			&::after
+				display: none
+			&:before
+				content: attr(data-table)
+				display: inline-block
+				width: 100%
+				font-weight: 500
+				font-size: 14px
+				text-decoration: underline
+			&:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-last-child(2), &:last-child
+				width: 33.33%
+			&:last-child	
+				margin: 0
+				&::before
+					display: none
+		&__head
+			display: none
+		&__body
+			.tr
+				padding: 10px 0
+
+	.nav-tabs-my
+		font-size: 18px
+
+	.mb-60
+		margin-bottom: 40px
+
+	.objects-section h1
+		margin: 0 0 30px					
+
 
 @media only screen and (max-width: 992px)
 	.fixed-menu
@@ -91,7 +152,7 @@
 			margin: 0
 
 	.fixed-menu-list
-		max-width: none		
+		max-width: none
 
 	.btn-burger
 		display: flex
@@ -210,12 +271,25 @@
 		margin: 50px 0 0
 		padding: 48px 0
 
+	.objects-section .nav-tabs-my
+		width: 100%
+		margin: 0 0 10px
+
+	.view-tabs
+		margin: 0 0 0 auto
+
+	.nav-tabs-my
+		font-size: 16px			
+
 @media only screen and (max-width: 576px)
 	.logo
 		max-width: 48px
 
 	h1
 		font-size: 24px
+
+	.h3
+		font-size: 20px
 
 	.card-product
 		min-height: auto
@@ -245,7 +319,18 @@
 
 	.developer-link
 		margin: 20px 0 0
-		width: 100%			
+		width: 100%
+
+	.table-layout
+		.td
+			&:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-last-child(2), &:last-child
+				width: 50%
+				
+	.view-tabs
+		margin: 10px 0 0
+		width: 100%
+		.nav-tabs
+			margin: 0				
 
 @media only screen and (max-width: 480px)
 
@@ -266,7 +351,10 @@
 			font-size: 24px
 
 	.footer-box__title
-		font-size: 24px				
+		font-size: 24px
+
+	.layout-card
+		width: 100%
 
 @media only screen and (min-width: 992px)
 	.fixed-menu
