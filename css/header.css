@@ -137,7 +137,7 @@ header {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  max-width: 135px;
+  max-width: 140px;
   -webkit-transition: max-width 0.3s ease;
   transition: max-width 0.3s ease;
   z-index: 10;

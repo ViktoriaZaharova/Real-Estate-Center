@@ -33,6 +33,15 @@
 	.news-card
 		padding: 0
 
+@media only screen and (max-width: 1400px)
+	.calendar-events
+		margin: 30px 0 0
+
+	.event-card
+		&__name, &__bottom, &__address
+			max-width: none
+		.box-text
+			max-width: none	
 @media only screen and (max-width: 1370px)
 	.copyright-date
 		margin: 0 10px 0 0
@@ -48,7 +57,7 @@
 	.contacts-column
 		max-width: 400px
 
-	.contacts-section 
+	.contacts-section
 		.map
 			height: 500px
 			width: calc(100% - 400px)
@@ -58,7 +67,7 @@
 		font-size: 16px
 		padding: 20px
 		h3
-			font-size: 20px				
+			font-size: 20px
 
 @media only screen and (max-width: 1200px)
 	.form-filter
@@ -322,7 +331,7 @@
 			margin: 20px 0
 			font-size: 20px
 		.box-text
-			margin: 0 0 20px		
+			margin: 0 0 20px
 
 	.contacts-section .map
 		height: 300px
@@ -332,6 +341,25 @@
 
 	.contacts-column
 		max-width: none
+	
+	.event-card
+		font-size: 16px
+		&__body
+			padding: 20px
+			width: calc(100% - 270px)
+		&__name
+			font-size: 18px
+		&__bottom
+			padding: 20px 0 0
+			margin: 20px 0 0
+		&__img
+			width: 270px	
+
+	.datepicker .ui-widget.ui-widget-content
+		padding: 20px
+		
+	.datepicker .ui-datepicker table
+		font-size: 16px						
 
 @media only screen and (max-width: 576px)
 	.logo
@@ -384,6 +412,30 @@
 		.nav-tabs
 			margin: 0
 
+	.event-card
+		&__img
+			width: 100%
+			height: 200px
+		&__body
+			width: 100%
+		&__head
+			margin: 0 0 20px
+
+	.datepicker .ui-datepicker td a
+		width: 30px
+		height: 30px
+		padding: 2px
+		font-size: 14px						
+
+	.datepicker .ui-widget.ui-widget-content
+		padding: 10px
+
+
+	.datepicker .ui-datepicker-title
+		font-size: 16px
+		margin: 0 20px
+		
+			
 @media only screen and (max-width: 480px)
 
 @media only screen and (max-width: 420px)

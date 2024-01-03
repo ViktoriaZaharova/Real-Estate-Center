@@ -92,3 +92,9 @@ $('.btn-show-more').on('click', function (e) {
 		$(this).hide();
 	}
 });
+
+
+$(".datepicker").datepicker({
+	// changeMonth: true,
+	changeYear: true
+});

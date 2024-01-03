@@ -679,3 +679,117 @@
   max-width: 580px;
   width: 100%;
 }
+
+.event-card {
+  width: 100%;
+  margin: 0 0 40px;
+  border: 1px solid #A19178;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 20px;
+}
+.event-card__img {
+  width: 316px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+}
+.event-card__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.event-card__body {
+  width: calc(100% - 316px);
+  padding: 36px 30px 38px 49px;
+}
+.event-card__head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 35px;
+}
+.event-card .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #A19178;
+}
+.event-card .date p {
+  margin: 0 25px 0 0;
+}
+.event-card .date p:last-child {
+  margin: 0;
+}
+.event-card__category {
+  color: #082849;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background: #F1F3FC;
+}
+.event-card .box-text {
+  max-width: 375px;
+}
+.event-card__name {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+  max-width: 338px;
+}
+.event-card__bottom {
+  max-width: 375px;
+  padding: 30px 0 0;
+  margin: 30px 0 0;
+  border-top: 1px solid #A19178;
+}
+.event-card__address {
+  font-weight: 500;
+  color: #082849;
+  max-width: 216px;
+  margin: 0 0 14px;
+}
+.event-card .btn {
+  margin: 34px 0 0;
+}
+.event-card:last-child {
+  margin: 0;
+}
+
+.calendar-events {
+  width: 100%;
+}
+
+.event-filter {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}

@@ -197,7 +197,7 @@ button, .btn
 	color: #505050
 	&:hover
 		background: $accent
-		color: #fff			
+		color: #fff
 
 .btn-view
 	svg
@@ -222,7 +222,7 @@ button, .btn
 	svg
 		width: 18px
 		height: 8px
-		margin: 0 0 0 10px		
+		margin: 0 0 0 10px
 
 .btn-group
 	width: 100%
@@ -291,7 +291,7 @@ h1
 	width: 100%
 	margin: 0
 	font-weight: normal
-	font-size: 24px	
+	font-size: 24px
 
 a.color-accent
 	color: $accent
@@ -300,7 +300,7 @@ a.color-accent
 	color: #78A192
 
 .color-light-red
-	color: #A17878		
+	color: #A17878
 
 .no-fill
 	fill: none
@@ -334,6 +334,9 @@ a.color-accent
 	&:hover
 		color: $blue
 
+.mb-30
+	margin-bottom: 30px
+
 .mb-40
 	margin-bottom: 40px
 
@@ -341,7 +344,7 @@ a.color-accent
 	margin-bottom: 50px
 
 .mb-60
-	margin-bottom: 60px	
+	margin-bottom: 60px
 
 .sorting-box
 	color: #686868
@@ -372,7 +375,7 @@ a.color-accent
 	height: 13px
 	background: $blue
 
-.ui-widget.ui-widget-content
+.ui-slider.ui-widget.ui-widget-content
 	border: none
 	border-radius: 3px
 	height: 3px
@@ -381,7 +384,7 @@ a.color-accent
 .ui-slider .ui-slider-range
 	background: $blue
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+.ui-slider .ui-state-default, .ui-slider .ui-widget-content .ui-state-default, .ui-slider .ui-widget-header .ui-state-default, .ui-slider .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
 	width: 13px
 	height: 13px
 	border: none
@@ -544,7 +547,7 @@ a.color-accent
 			color: $blue
 
 .breadcrumb-item.active
-	color: $accent		
+	color: $accent
 
 .breadcrumb-item+.breadcrumb-item
 	padding: 0
@@ -565,12 +568,116 @@ a.color-accent
 		&:last-child
 			margin: 0
 	.nav-link
-		padding: 0 0 5px 
+		padding: 0 0 5px
 		border: none
 		border-radius: 0
 		border-bottom: 1px solid transparent
 		color: $accent
 		&.active
 			color: $blue
-			border-color: $accent		
+			border-color: $accent
 			font-weight: bold
+
+.datepicker
+	width: 100%
+	.ui-widget.ui-widget-content
+		border: none
+		border-radius: 20px
+		background: #FAFAFA
+		width: 100%
+		padding: 50px 30px
+		font-family: $default-font
+
+	.ui-datepicker .ui-datepicker-header
+		border: none
+		border-bottom: 1px solid $blue
+		border-radius: 0
+		background: transparent
+		padding: 0 0 20px
+		display: flex
+		align-items: center
+		justify-content: center
+
+	.ui-datepicker-title
+		margin: 0 30px
+		font-size: 18px
+		font-weight: 500
+		color: $blue
+		line-height: normal
+		select
+			height: auto
+			padding: 0
+			appearance: auto
+			width: fit-content
+			margin: 0
+		.ui-datepicker-year
+			appearance: none
+			background: url("../img/arrow-bottom.svg") no-repeat right center
+			background-size: 13px
+			padding: 0 20px 0 0
+			margin: 0 0 0 10px	
+	.ui-datepicker-prev, .ui-datepicker-next
+		position: relative
+		@include d-flex
+		width: 20px
+		height: 20px
+		top: 0
+		right: 0
+		left: 0
+		cursor: pointer
+		z-index: 1
+		transform: none
+		border: none
+		border-radius: 0
+		.ui-icon
+			width: 7px
+			height: 13px
+			position: relative
+			top: 0
+			right: 0
+			left: 0
+			transform: none
+			margin: 0
+	.ui-datepicker-prev
+		.ui-icon
+			background: url('../img/arrow-left.svg') no-repeat center
+			background-size: 100%
+
+	.ui-datepicker-next
+		order: 1
+		.ui-icon
+			background: url('../img/arrow-right.svg') no-repeat center
+			background-size: 100%
+	.ui-datepicker
+		table
+			margin: 0
+			font-size: 18px
+			font-family: $default-font
+			color: $blue
+			font-weight: 500
+
+		th
+			text-transform: uppercase
+			padding: 23px 5px 7px
+			font-weight: 500
+			color: $accent
+		td
+			a
+				@include d-flex
+				width: 38px
+				height: 38px
+				border-radius: 50%
+				margin: 0 auto	
+				font-size: 18px
+				font-weight: 500
+				background: transparent
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+		border: 1px solid transparent
+	.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
+		background: $accent
+		color: #fff	
+		border-color: $accent		
+	.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+		border: 1px solid $accent
+		color: $blue
+		background: transparent	
