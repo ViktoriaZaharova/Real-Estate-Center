@@ -278,6 +278,15 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   stroke: #fff;
 }
 
+.btn-border-accent {
+  border: 1px solid #A19178;
+  color: #505050;
+}
+.btn-border-accent:hover {
+  background: #A19178;
+  color: #fff;
+}
+
 .btn-view svg {
   margin: 0 0 0 10px;
   fill: #fff;
@@ -295,6 +304,15 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   fill: #fff;
   width: 22px;
   height: 20px;
+  margin: 0 0 0 10px;
+}
+
+.btn-toggle {
+  margin: 0 auto;
+}
+.btn-toggle svg {
+  width: 18px;
+  height: 8px;
   margin: 0 0 0 10px;
 }
 

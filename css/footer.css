@@ -139,3 +139,14 @@ footer .h3 {
   margin: 0 0 0 10px;
   max-width: 93px;
 }
+
+.footer {
+  margin: 36px 0 0;
+  padding: 34px 0;
+}
+.footer .footer-address__bottom {
+  margin: 0;
+}
+.footer::before {
+  display: none;
+}

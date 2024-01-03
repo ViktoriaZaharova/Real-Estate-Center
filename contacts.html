@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Real Estate Center</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex flex-wrap align-items-center">
+					<a href="index.html" class="logo">
+						<img src="img/logo.svg" class="d-none d-sm-block" alt="">
+						<img src="img/logo-mobile.svg" class="d-block d-sm-none" alt="">
+					</a>
+					<nav class="nav nav-menu">
+						<ul class="menu my-ul">
+							<li class="menu-item"><a href="index.html" class="menu-link">Apartment</a></li>
+							<li class="menu-item"><a href="news.html" class="menu-link">News</a></li>
+							<li class="menu-item"><a href="documentations.html" class="menu-link">Documentation</a></li>
+						</ul>
+					</nav>
+
+					<div class="language-box dropdown">
+						<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">RU</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">Ru</a>
+							<a href="#" class="dropdown-item">En</a>
+						</div>
+					</div>
+
+					<div class="cabinet-box dropdown">
+						<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+							<span class="cabinet-box__avatar"><img src="img/avatar-user.png" alt=""></span>
+						</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item cabinet-box__link">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#user-icon"></use>
+								</svg>
+								<span>Account</span>
+							</a>
+							<a href="#" class="dropdown-item cabinet-box__link">
+								<svg class="svg-icon fill-none">
+									<use xlink:href="img/sprite.svg#exit-icon"></use>
+								</svg>
+								<span>Log out</span>
+							</a>
+							<a href="#" class="dropdown-item cabinet-box__link">
+								<span>back to main page</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="btn-burger">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#burger"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="breadcrumb-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav aria-label="breadcrumb" class="nav-breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Main page</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Contacts</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+
+		<div class="fixed-menu">
+			<div class="fixed-menu__close"></div>
+			<nav class="nav nav-menu">
+				<ul class="menu my-ul">
+					<li class="menu-item"><a href="index.html" class="menu-link">Apartment</a></li>
+					<li class="menu-item"><a href="news.html" class="menu-link">News</a></li>
+					<li class="menu-item"><a href="documentations.html" class="menu-link">Documentation</a></li>
+				</ul>
+			</nav>
+			<ul class="fixed-menu-list my-ul">
+				<li class="fixed-menu-item">
+					<a href="objects.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon1"></use>
+							</svg></span>
+						<span class="fixed-menu-link__text">My requests <br>for objects</span>
+					</a>
+				</li>
+				<li class="fixed-menu-item">
+					<a href="training-materials.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon2"></use>
+							</svg></span>
+						<span class="fixed-menu-link__text">Training materials</span>
+					</a>
+				</li>
+				<li class="fixed-menu-item">
+					<a href="promotional-materials.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon3"></use>
+							</svg>
+						</span>
+						<span class="fixed-menu-link__text">Promotional materials</span>
+					</a>
+				</li>
+				<li class="fixed-menu-item">
+					<a href="events.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon4"></use>
+							</svg>
+							<span class="fixed-menu-link__icon-value">3</span>
+						</span>
+						<span class="fixed-menu-link__text">Calendar <br>of events</span>
+					</a>
+				</li>
+				<li class="fixed-menu-item">
+					<a href="documentation.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon5"></use>
+							</svg></span>
+						<span class="fixed-menu-link__text">Documentation</span>
+					</a>
+				</li>
+				<li class="fixed-menu-item">
+					<a href="contacts.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon6"></use>
+							</svg></span>
+						<span class="fixed-menu-link__text">Contacts</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="wrapper-content">
+
+			<section class="contacts-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h1>Contacts</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="contacts-wrapper">
+								<div class="contacts-column">
+									<div class="contacts-box">
+										<h3>Main office</h3>
+										<div class="address-box">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#location"></use>
+											</svg>
+											<span>Baku, 10, Ahmad Rajabli street, 3rd floor</span>
+										</div>
+										<a href="tel:5 (555) 654-3210" class="contacts-box__link phone-link">5 (555) 654-3210</a>
+										<a href="mailto:info@rscenter.com" class="contacts-box__link mail-link">info@rscenter.com</a>
+										<a href="#" class="btn btn-md btn-accent" target="_blank">On the map</a>
+									</div>
+									<div class="contacts-box">
+										<h3>Main office</h3>
+										<div class="address-box">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#location"></use>
+											</svg>
+											<span>Baku, 10, Ahmad Rajabli street, 3rd floor</span>
+										</div>
+										<a href="tel:5 (555) 654-3210" class="contacts-box__link phone-link">5 (555) 654-3210</a>
+										<a href="mailto:info@rscenter.com" class="contacts-box__link mail-link">info@rscenter.com</a>
+										<a href="#" class="btn btn-md btn-accent" target="_blank">On the map</a>
+									</div>
+									<div class="contacts-box">
+										<h3>Main office</h3>
+										<div class="address-box">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#location"></use>
+											</svg>
+											<span>Baku, 10, Ahmad Rajabli street, 3rd floor</span>
+										</div>
+										<a href="tel:5 (555) 654-3210" class="contacts-box__link phone-link">5 (555) 654-3210</a>
+										<a href="mailto:info@rscenter.com" class="contacts-box__link mail-link">info@rscenter.com</a>
+										<a href="#" class="btn btn-md btn-accent" target="_blank">On the map</a>
+									</div>
+								</div>
+								<div class="map">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.5259396201322!2d-74.01557352408241!3d40.706437137956385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a113c1507a3%3A0x53dbcbf433cd2193!2zNDUgQnJvYWR3YXkgIzUzMCwgTmV3IFlvcmssIE5ZIDEwMDA2LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1703367259589!5m2!1sru!2sua"
+										style="border:0;" allowfullscreen="" loading="lazy"
+										referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="footer-address__bottom">
+								<div class="copyright">
+									<div class="copyright-date">2019-2023</div>
+									<img src="img/copyright.svg" alt="">
+									<span>all rights reserved</span>
+								</div>
+
+								<a href="https://elevenlab.ru" target="_blank" class="developer-link">
+									<span>developed by</span>
+									<img src="img/elevenlab.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

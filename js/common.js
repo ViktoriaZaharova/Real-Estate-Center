@@ -1,5 +1,15 @@
 // $('[name="phone"]').mask('+7 (999) 999-99-99');
 
+// активная ссылка меню
+$('.menu li a').each(function () {
+	let location = window.location.href;
+	let link = this.href;
+	if (location === link) {
+		$(this).addClass('active');
+	}
+});
+// end
+
 $('.btn-burger').on('click', function () {
 	$('.fixed-menu').css('right', 0);
 });
@@ -71,4 +81,14 @@ $(function () {
 	});
 
 	// $(".slider-input3").val($(".slider3").slider("values", 0));
+});
+
+$('.btn-show-more').on('click', function (e) {
+	e.preventDefault();
+	$('.documents-card:hidden').slice(0, 3).css('display', 'flex');
+
+	var onBlock = $('.documents-card:hidden').length;
+	if (onBlock <= 0) {
+		$(this).hide();
+	}
 });

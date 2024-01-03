@@ -31,6 +31,14 @@
     font-size: 20px;
     margin: 0 20px 0 0;
   }
+  .documents-card {
+    padding: 20px;
+    max-width: 370px;
+    font-size: 16px;
+  }
+  .news-card {
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 1370px) {
   .copyright-date {
@@ -43,6 +51,21 @@
   .footer-address__bottom {
     font-size: 16px;
     margin: 30px 0 0;
+  }
+  .contacts-column {
+    max-width: 400px;
+  }
+  .contacts-section .map {
+    height: 500px;
+    width: calc(100% - 400px);
+    padding: 0 0 0 10px;
+  }
+  .contacts-box {
+    font-size: 16px;
+    padding: 20px;
+  }
+  .contacts-box h3 {
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -219,6 +242,15 @@
   .price {
     font-size: 26px;
   }
+  .documents-card {
+    max-width: calc(50% - 10px);
+    margin-right: 0;
+  }
+  .documents-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 @media only screen and (max-width: 768px) {
   .card-product {
@@ -335,6 +367,32 @@
   }
   .nav-tabs-my {
     font-size: 16px;
+  }
+  .documents-card {
+    max-width: 100%;
+  }
+  .news-card {
+    font-size: 16px;
+  }
+  .news-card__body {
+    height: auto;
+    padding: 25px 20px;
+  }
+  .news-card__name {
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  .news-card .box-text {
+    margin: 0 0 20px;
+  }
+  .contacts-section .map {
+    height: 300px;
+    width: 100%;
+    padding: 0;
+    margin: 30px 0 0;
+  }
+  .contacts-column {
+    max-width: none;
   }
 }
 @media only screen and (max-width: 576px) {

@@ -15,15 +15,23 @@
 			&:nth-child(4)
 				width: 230px
 		&__head
-			margin: 0 0 20px		
-					
+			margin: 0 0 20px
+
 	.table-layout-total
 		margin: 30px 0 0
 		font-size: 20px
 		padding: 0
 		.h3
 			font-size: 20px
-			margin: 0 20px 0 0				
+			margin: 0 20px 0 0
+
+	.documents-card
+		padding: 20px
+		max-width: 370px
+		font-size: 16px
+
+	.news-card
+		padding: 0
 
 @media only screen and (max-width: 1370px)
 	.copyright-date
@@ -36,6 +44,21 @@
 	.footer-address__bottom
 		font-size: 16px
 		margin: 30px 0 0
+
+	.contacts-column
+		max-width: 400px
+
+	.contacts-section 
+		.map
+			height: 500px
+			width: calc(100% - 400px)
+			padding: 0 0 0 10px
+
+	.contacts-box
+		font-size: 16px
+		padding: 20px
+		h3
+			font-size: 20px				
 
 @media only screen and (max-width: 1200px)
 	.form-filter
@@ -93,7 +116,7 @@
 				text-decoration: underline
 			&:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-last-child(2), &:last-child
 				width: 33.33%
-			&:last-child	
+			&:last-child
 				margin: 0
 				&::before
 					display: none
@@ -110,8 +133,7 @@
 		margin-bottom: 40px
 
 	.objects-section h1
-		margin: 0 0 30px					
-
+		margin: 0 0 30px
 
 @media only screen and (max-width: 992px)
 	.fixed-menu
@@ -183,6 +205,13 @@
 
 	.price
 		font-size: 26px
+
+	.documents-card
+		max-width: calc(50% - 10px)
+		margin-right: 0
+
+	.documents-wrapper
+		justify-content: space-between
 
 @media only screen and (max-width: 768px)
 	.card-product
@@ -279,7 +308,30 @@
 		margin: 0 0 0 auto
 
 	.nav-tabs-my
-		font-size: 16px			
+		font-size: 16px
+
+	.documents-card
+		max-width: 100%
+
+	.news-card
+		font-size: 16px
+		&__body
+			height: auto
+			padding: 25px 20px
+		&__name
+			margin: 20px 0
+			font-size: 20px
+		.box-text
+			margin: 0 0 20px		
+
+	.contacts-section .map
+		height: 300px
+		width: 100%
+		padding: 0
+		margin: 30px 0 0
+
+	.contacts-column
+		max-width: none
 
 @media only screen and (max-width: 576px)
 	.logo
@@ -325,12 +377,12 @@
 		.td
 			&:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-last-child(2), &:last-child
 				width: 50%
-				
+
 	.view-tabs
 		margin: 10px 0 0
 		width: 100%
 		.nav-tabs
-			margin: 0				
+			margin: 0
 
 @media only screen and (max-width: 480px)
 
