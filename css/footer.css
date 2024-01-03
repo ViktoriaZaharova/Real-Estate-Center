@@ -150,3 +150,134 @@ footer .h3 {
 .footer::before {
   display: none;
 }
+
+.modal-dialog {
+  max-width: 1190px;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.btn-close {
+  position: absolute;
+  margin: 0;
+  z-index: 1;
+  opacity: 1;
+  cursor: pointer;
+  top: -24px;
+  right: -24px;
+  border: none;
+  border-radius: 50%;
+  background: #082849;
+  fill: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 66px;
+  height: 66px;
+  padding: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.modal-body {
+  width: 100%;
+  padding: 46px 48px 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.event-details {
+  border-radius: 10px;
+  border: 1px solid #A19178;
+  max-width: 466px;
+  width: 100%;
+  margin: 0 0 0 auto;
+  padding: 30px 30px 24px;
+  font-size: 20px;
+  color: #082849;
+}
+.event-details__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #A19178;
+  font-family: "Artega", sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 24px;
+  line-height: normal;
+}
+.event-details__date p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.event-details__date p:after {
+  content: "";
+  margin: -5px 17px 2px;
+  display: inline-block;
+  width: 1px;
+  height: 26px;
+  background: #082849;
+}
+.event-details__date p:last-child::after {
+  display: none;
+}
+.event-details__address {
+  margin: 22px 0 18px;
+  font-weight: 500;
+  max-width: 218px;
+}
+
+.event-description {
+  width: calc(100% - 466px);
+  font-size: 20px;
+}
+.event-description .box-text {
+  margin: 30px 0 0;
+  max-width: 525px;
+}
+
+.modal-subtitle {
+  font-weight: 500;
+  color: #082849;
+  margin: 0 0 25px;
+}
+
+.modal-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "Artega", sans-serif;
+  color: #082849;
+  max-width: 500px;
+}
+
+.modal-footer {
+  border-top: 1px solid #D2D2D2;
+  width: 100%;
+  padding: 40px 48px;
+}

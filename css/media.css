@@ -78,6 +78,16 @@
   .contacts-box h3 {
     font-size: 20px;
   }
+  .btn-close {
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    padding: 7px;
+  }
+  .modal-body, .modal-footer {
+    padding: 30px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .form-filter .form-column {
@@ -165,6 +175,32 @@
   }
   .objects-section h1 {
     margin: 0 0 30px;
+  }
+  .event-details {
+    max-width: 300px;
+    font-size: 16px;
+    padding: 20px;
+  }
+  .event-details__date {
+    font-size: 18px;
+  }
+  .event-details__date p:after {
+    margin: -3px 10px 2px;
+    height: 20px;
+  }
+  .event-details__address {
+    margin: 20px 0 15px;
+    max-width: none;
+  }
+  .event-description {
+    width: calc(100% - 300px);
+    font-size: 16px;
+  }
+  .modal-title {
+    font-size: 20px;
+  }
+  .label-checkbox, input, select, textarea {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -427,6 +463,23 @@
   }
   .datepicker .ui-datepicker table {
     font-size: 16px;
+  }
+  .event-description {
+    width: 100%;
+  }
+  .event-description .box-text {
+    margin: 20px 0 0;
+    max-width: none;
+  }
+  .event-description .box-text br {
+    display: none;
+  }
+  .modal-title {
+    max-width: none;
+  }
+  .event-details {
+    max-width: none;
+    margin: 30px 0 0;
   }
 }
 @media only screen and (max-width: 576px) {

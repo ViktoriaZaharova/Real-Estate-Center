@@ -119,33 +119,33 @@ input, textarea, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0 15px;
+  padding: 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  border: none;
-  border-radius: 10px;
+  border: 1px solid #A19178;
+  border-radius: 20px;
   width: 100%;
-  height: 54px;
+  height: 58px;
   background: transparent;
-  color: #000;
-  font-size: 15px;
+  color: #A19178;
+  font-size: 20px;
   cursor: pointer;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
-  color: #595959;
+  color: #A19178;
 }
 input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-  color: #595959;
+  color: #A19178;
 }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
-  color: #595959;
+  color: #A19178;
 }
 input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
-  color: #595959;
+  color: #A19178;
 }
 input::placeholder, textarea::placeholder, select::placeholder {
-  color: #595959;
+  color: #A19178;
 }
 input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
   outline: none;
@@ -586,30 +586,44 @@ a.color-accent {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  margin: 15px 0 0;
-  line-height: 1.14;
+  color: #082849;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: normal;
+  cursor: pointer;
 }
-
-.inp-check {
+.label-checkbox input {
   display: none;
+}
+.label-checkbox input:checked ~ .checkbox-custom::before {
+  opacity: 1;
 }
 
 .checkbox-custom {
   margin: 0 12px 0 0;
   position: relative;
-  border-radius: 6px;
+  border-radius: 5px;
+  border: 1px solid #A19178;
   background-color: #fff;
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
   cursor: pointer;
 }
-
-.inp-check:checked ~ .checkbox-custom {
-  background: #fff url("../img/check-black.svg") no-repeat center;
-  background-size: 8px;
+.checkbox-custom::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: #082849;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
 }
 
 .label-radio {
@@ -840,6 +854,9 @@ a.color-accent {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0;
+  border: none;
+  border-radius: 0;
+  color: #082849;
 }
 .datepicker .ui-datepicker-title .ui-datepicker-year {
   -webkit-appearance: none;
@@ -861,8 +878,8 @@ a.color-accent {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   top: 0;
   right: 0;
   left: 0;

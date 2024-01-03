@@ -185,8 +185,10 @@
 								<div class="event-card__img"><img src="img/news.jpeg" alt=""></div>
 								<div class="event-card__body">
 									<div class="event-card__head">
-										<div class="date"><p>July 17</p>
-											<p>11:00</p></div>
+										<div class="date">
+											<p>July 17</p>
+											<p>11:00</p>
+										</div>
 										<div class="event-card__category">Training</div>
 									</div>
 									<div class="event-card__name">Realtor: effective real estate transactions</div>
@@ -207,33 +209,34 @@
 									</div>
 								</div>
 							</div>
-<div class="event-card">
-	<div class="event-card__img"><img src="img/news.jpeg" alt=""></div>
-	<div class="event-card__body">
-		<div class="event-card__head">
-			<div class="date">
-				<p>July 17</p>
-				<p>11:00</p>
-			</div>
-			<div class="event-card__category">Training</div>
-		</div>
-		<div class="event-card__name">Realtor: effective real estate transactions</div>
-		<div class="box-text">
-			<p>You will understand how to analyze
-				the real estate market, evaluate the value of objects...</p>
-		</div>
-		<div class="event-card__bottom">
-			<div class="event-card__address">
-				<p>Zarechnaya str., 10 st1
-					Collection at 10:50</p>
-			</div>
-			<div class="box-text">
-				<p>(in the developer's sales department)</p>
-			</div>
-			<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#registrationModal">register</a>
-		</div>
-	</div>
-</div>
+							<div class="event-card">
+								<div class="event-card__img"><img src="img/news.jpeg" alt=""></div>
+								<div class="event-card__body">
+									<div class="event-card__head">
+										<div class="date">
+											<p>July 17</p>
+											<p>11:00</p>
+										</div>
+										<div class="event-card__category">Training</div>
+									</div>
+									<div class="event-card__name">Realtor: effective real estate transactions</div>
+									<div class="box-text">
+										<p>You will understand how to analyze
+											the real estate market, evaluate the value of objects...</p>
+									</div>
+									<div class="event-card__bottom">
+										<div class="event-card__address">
+											<p>Zarechnaya str., 10 st1
+												Collection at 10:50</p>
+										</div>
+										<div class="box-text">
+											<p>(in the developer's sales department)</p>
+										</div>
+										<a href="#" class="btn btn-accent" data-bs-toggle="modal"
+											data-bs-target="#registrationModal">register</a>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="col-12 col-xxl-5">
 							<div class="calendar-events">
@@ -303,6 +306,88 @@
 		</div>
 	</div>
 
+	<!-- Модальное окно -->
+	<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg></button>
+
+
+				<div class="modal-body">
+					<div class="event-description">
+						<div class="modal-subtitle">Registration for the event</div>
+						<div class="modal-title">Realtor: effective real estate transactions</div>
+						<div class="box-text">
+							<p>You will understand how to analyze <br>
+								the real estate market, evaluate the value of objects</p>
+						</div>
+					</div>
+
+					<div class="event-details">
+						<div class="event-details__date">
+							<p>July 17</p>
+							<p>11:00</p>
+						</div>
+						<div class="event-details__address">
+							<p>Zarechnaya str., 10 st1
+								Collection at 10:50</p>
+						</div>
+						<div class="box-text">
+							<p>(in the developer's sales department)</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<form method="post" class="form-registration">
+						<div class="row">
+							<div class="col-12 col-lg-4 mb-30">
+								<label class="label-checkbox">
+									<input type="checkbox" name="checkbox">
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">I will be at the event</span>
+								</label>
+							</div>
+							<div class="col-12 col-lg-8 mb-30">
+								<label class="label-checkbox">
+									<input type="checkbox" name="checkbox" checked>
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">the event is attended by an employee / colleague of the company</span>
+								</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-lg-4 mb-30">
+								<label>
+									<input type="text" placeholder="Full name" name="name">
+								</label>
+							</div>
+							<div class="col-12 col-lg-4 mb-30">
+								<label>
+									<input type="text" placeholder="Phone number" name="phone" required>
+								</label>
+							</div>
+							<div class="col-12 col-lg-4 mb-30">
+								<label>
+									<input type="text" placeholder="E-mail" name="mail" required>
+								</label>
+							</div>
+							<div class="col-12 col-lg-8 mb-30">
+								<label>
+									<input type="text" placeholder="Comments" name="comment">
+								</label>
+							</div>
+							<div class="col-12 col-lg-4">
+								<button type="submit" class="btn btn-accent">register</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- add plugins js-->
 	<script src="js/jquery.min.js"></script>
