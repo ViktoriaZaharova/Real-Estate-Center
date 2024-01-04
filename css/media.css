@@ -54,6 +54,12 @@
   .product-wrapper .tab-content {
     max-width: 400px;
   }
+  .table-history .td:first-child {
+    width: 160px;
+  }
+  .table-history .td:nth-child(2) {
+    width: 330px;
+  }
 }
 @media only screen and (max-width: 1500px) {
   .calendar-events {
@@ -75,6 +81,12 @@
     padding: 30px;
     max-width: 400px;
   }
+  .product-wrapper__description-v2 {
+    padding: 0;
+  }
+  .product-wrapper__description-box {
+    padding: 30px;
+  }
   .product-wrapper__details {
     width: calc(100% - 400px);
     padding: 30px;
@@ -90,9 +102,11 @@
   .product-wrapper .nav-tabs-my li {
     margin: 0 0 20px;
   }
+  .product-status {
+    margin: 0 0 20px;
+  }
   .product-characteristics {
     font-size: 18px;
-    margin: 20px 0 0;
   }
   .product-characteristics li {
     margin: 0 0 20px;
@@ -212,6 +226,9 @@
   .table-layout .tr {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .table-layout .td {
     -ms-flex-wrap: wrap;
@@ -301,6 +318,15 @@
   }
   .list-characteristics-product {
     font-size: 16px;
+  }
+  .table-history .table-layout__body .td:nth-of-type(2)::after {
+    display: none;
+  }
+  .table-history .td:last-child::before {
+    display: block;
+  }
+  .request-history {
+    margin: 50px 0;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -398,12 +424,23 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .product-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .product-wrapper__description {
     max-width: none;
     width: 100%;
     padding: 20px;
     border: none;
     border-bottom: 1px solid #A19178;
+  }
+  .product-wrapper__description-v2 {
+    padding: 0;
+  }
+  .product-wrapper__description-box {
+    padding: 20px;
   }
   .product-wrapper__details {
     width: 100%;
@@ -422,6 +459,9 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin: 20px 0 0;
+  }
+  .table-layout .td {
+    padding: 0 5px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -619,6 +659,12 @@
   .form-order [type=submit] {
     margin: 0;
   }
+  .form-request [type=submit] {
+    margin: 0;
+  }
+  textarea {
+    padding: 15px 20px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .logo {
@@ -626,6 +672,9 @@
   }
   h1 {
     font-size: 24px;
+  }
+  h2 {
+    font-size: 22px;
   }
   .h3 {
     font-size: 20px;

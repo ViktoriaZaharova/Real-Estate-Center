@@ -578,8 +578,17 @@
 	&__description
 		max-width: 504px
 		width: 100%
-		padding: 43px 49px
+		padding: 43px 50px
 		border-right: 1px solid $accent
+		&-v2
+			padding: 0
+		&-box
+			padding: 45px 50px
+			width: 100%
+			height: 50%
+			border-bottom: 1px solid $accent
+			&:last-child
+				border: none
 	&__details
 		width: calc(100% - 504px)
 		padding: 25px 55px 38px
@@ -604,10 +613,12 @@
 .product-location
 	max-width: 136px
 	width: 100%
-	@include d-flex						
+	@include d-flex		
+	
+.product-status
+	margin: 0 0 50px					
 
 .product-characteristics
-	margin: 50px 0 0
 	font-size: 20px
 	li
 		display: flex
@@ -639,3 +650,28 @@
 		&:last-child
 			margin-right: 0	
 					
+.request-history
+	margin: 85px 0
+
+.table-history
+	.td
+		&:first-child
+			width: 160px
+		&:nth-child(2)
+			width: 330px
+		&:last-child
+			margin-left: 0
+
+	.table-layout__body
+		.td		
+			&:nth-of-type(2)
+				&::after
+					display: block
+				
+.form-request
+	textarea
+		background: #FAFAFA
+		border: none
+	[type="submit"]
+		margin: 0 0 0 auto
+		padding: 15px 70px	

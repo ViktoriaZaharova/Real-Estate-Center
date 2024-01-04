@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Real Estate Center</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex flex-wrap align-items-center">
+					<a href="index.html" class="logo">
+						<img src="img/logo.svg" class="d-none d-sm-block" alt="">
+						<img src="img/logo-mobile.svg" class="d-block d-sm-none" alt="">
+					</a>
+					<nav class="nav nav-menu">
+						<ul class="menu my-ul">
+							<li class="menu-item"><a href="index.html" class="menu-link">Apartment</a></li>
+							<li class="menu-item"><a href="news.html" class="menu-link">News</a></li>
+							<li class="menu-item"><a href="documentations.html" class="menu-link">Documentation</a></li>
+						</ul>
+					</nav>
+
+					<div class="language-box dropdown">
+						<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">RU</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">Ru</a>
+							<a href="#" class="dropdown-item">En</a>
+						</div>
+					</div>
+
+					<div class="cabinet-box dropdown">
+						<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+							<span class="cabinet-box__avatar"><img src="img/avatar-user.png" alt=""></span>
+						</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item cabinet-box__link">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#user-icon"></use>
+								</svg>
+								<span>Account</span>
+							</a>
+							<a href="#" class="dropdown-item cabinet-box__link">
+								<svg class="svg-icon fill-none">
+									<use xlink:href="img/sprite.svg#exit-icon"></use>
+								</svg>
+								<span>Log out</span>
+							</a>
+							<a href="#" class="dropdown-item cabinet-box__link">
+								<span>back to main page</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="btn-burger">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#burger"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="breadcrumb-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav aria-label="breadcrumb" class="nav-breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Main page</a></li>
+							<li class="breadcrumb-item active" aria-current="page">My requests for objects</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+
+		<div class="fixed-menu">
+			<div class="fixed-menu__close"></div>
+			<nav class="nav nav-menu">
+				<ul class="menu my-ul">
+					<li class="menu-item"><a href="index.html" class="menu-link">Apartment</a></li>
+					<li class="menu-item"><a href="news.html" class="menu-link">News</a></li>
+					<li class="menu-item"><a href="documentations.html" class="menu-link">Documentation</a></li>
+				</ul>
+			</nav>
+			<ul class="fixed-menu-list my-ul">
+				<li class="fixed-menu-item">
+					<a href="objects.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon1"></use>
+							</svg></span>
+						<span class="fixed-menu-link__text">My requests <br>for objects</span>
+					</a>
+				</li>
+				<li class="fixed-menu-item">
+					<a href="training-materials.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon2"></use>
+							</svg></span>
+						<span class="fixed-menu-link__text">Training materials</span>
+					</a>
+				</li>
+				<li class="fixed-menu-item">
+					<a href="promotional-materials.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon3"></use>
+							</svg>
+						</span>
+						<span class="fixed-menu-link__text">Promotional materials</span>
+					</a>
+				</li>
+				<li class="fixed-menu-item">
+					<a href="events.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon4"></use>
+							</svg>
+							<span class="fixed-menu-link__icon-value">3</span>
+						</span>
+						<span class="fixed-menu-link__text">Calendar <br>of events</span>
+					</a>
+				</li>
+				<li class="fixed-menu-item">
+					<a href="documentation.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon5"></use>
+							</svg></span>
+						<span class="fixed-menu-link__text">Documentation</span>
+					</a>
+				</li>
+				<li class="fixed-menu-item">
+					<a href="contacts.html" class="fixed-menu-link">
+						<span class="fixed-menu-link__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#menu-icon6"></use>
+							</svg></span>
+						<span class="fixed-menu-link__text">Contacts</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="wrapper-content">
+
+			<section class="object-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h1>request 124 / 12.04.2023</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="product-name">1-room apartment, n362</div>
+						</div>
+					</div>
+					<div class="row align-items-center mb-45">
+						<div class="col-12 col-lg-8">
+							<ul class="list-characteristics list-characteristics-product my-ul">
+								<li>
+									<p>32.27 m<sup>2</sup></p>
+								</li>
+								<li>
+									<p>95 Evans Street Residential Building</p>
+								</li>
+								<li>
+									<p>building 13</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-12 col-lg-4">
+							<ul class="product-nav my-ul">
+								<li><a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#print"></use>
+										</svg></a></li>
+								<li><a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#mail"></use>
+										</svg></a></li>
+								<li><a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#schare"></use>
+										</svg></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12">
+							<div class="product-wrapper">
+								<div class="product-wrapper__description product-wrapper__description-v2">
+									<div class="product-wrapper__description-box">
+										<ul class="product-characteristics my-ul">
+											<li>
+												<p>Area</p>
+												<span>35 m<sup>2</sup></span>
+											</li>
+											<li>
+												<p>Level</p>
+												<span>6/10</span>
+											</li>
+											<li>
+												<p>Deadline for delivery</p>
+												<span>1Q 2023</span>
+											</li>
+										</ul>
+									</div>
+									<div class="product-wrapper__description-box">
+										<ul class="product-characteristics my-ul">
+											<li>
+												<p>Client’s full name</p>
+												<span>Ivanov I.A.</span>
+											</li>
+											<li>
+												<p>Transaction price</p>
+												<span>320 000 USD</span>
+											</li>
+											<li>
+												<p>Reward expected</p>
+												<span>86 000 USD</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="product-wrapper__details">
+									<ul class="nav nav-tabs nav-tabs-my" role="tablist">
+										<li class="nav-item" role="presentation">
+											<button class="nav-link active" id="1-tab" data-bs-toggle="tab" data-bs-target="#1-tab-pane"
+												type="button" role="tab" aria-controls="1-tab-pane" aria-selected="true">
+												Layout</button>
+										</li>
+										<li class="nav-item" role="presentation">
+											<button class="nav-link" id="2-tab" data-bs-toggle="tab" data-bs-target="#2-tab-pane"
+												type="button" role="tab" aria-controls="2-tab-pane-pane" aria-selected="false">
+												Floor plan</button>
+										</li>
+										<li class="nav-item" role="presentation">
+											<button class="nav-link" id="3-tab" data-bs-toggle="tab" data-bs-target="#3-tab-pane"
+												type="button" role="tab" aria-controls="3-tab-pane" aria-selected="false">
+												Master Plan</button>
+										</li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane fade show active" id="1-tab-pane" role="tabpanel" aria-labelledby="1-tab"
+											tabindex="0">
+											<a href="img/layout2.png" class="product-gallery__layout" data-fancybox="layout"><img
+													src="img/layout2.png" alt=""></a>
+										</div>
+										<div class="tab-pane fade" id="2-tab-pane" role="tabpanel" aria-labelledby="2-tab" tabindex="0">
+											<a href="img/layout1.png" class="product-gallery__layout" data-fancybox="layout"><img
+													src="img/layout1.png" alt=""></a>
+										</div>
+										<div class="tab-pane fade" id="3-tab-pane" role="tabpanel" aria-labelledby="3-tab" tabindex="0">
+											<a href="img/layout2.png" class="product-gallery__layout" data-fancybox="layout"><img
+													src="img/layout2.png" alt=""></a>
+										</div>
+									</div>
+									<div class="product-location"><img src="img/product-nav.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="request-history">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2>request history</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-lg-7">
+							<div class="table-layout table-history">
+								<div class="table-layout__head">
+									<div class="tr">
+										<div class="td">Date</div>
+										<div class="td">Request status</div>
+										<div class="td">Responsible person</div>
+									</div>
+								</div>
+								<div class="table-layout__body">
+									<div class="tr">
+										<div class="td" data-table="Date">
+											<p>12.04.2023</p>
+										</div>
+										<div class="td" data-table="Request status">
+											<p>registration of the request</p>
+										</div>
+										<div class="td" data-table="Responsible person">
+											<p>Sergeenko D.S.</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td" data-table="Date">
+											<p>13.04.2023</p>
+										</div>
+										<div class="td" data-table="Request status">
+											<p>approval of the request</p>
+										</div>
+										<div class="td" data-table="Responsible person">
+											<p>Sergeenko D.S.</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td" data-table="Date">
+											<p>14.04.2023</p>
+										</div>
+										<div class="td color-light-green" data-table="Request status">
+											<p>deal</p>
+										</div>
+										<div class="td" data-table="Responsible person">
+											<p>Sergeenko D.S.</p>
+										</div>
+									</div>
+									<div class="tr">
+										<div class="td" data-table="Date">
+											<p>15.04.2023</p>
+										</div>
+										<div class="td color-light-green" data-table="Request status">
+											<p>payment of reward</p>
+										</div>
+										<div class="td" data-table="Responsible person">
+											<p>Sergeenko D.S.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="comment-request">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2>Comments on the request</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-lg-7">
+							<form method="post" class="form-request">
+								<label>
+									<textarea name="comment" placeholder="write a comment"></textarea>
+								</label>
+								<button type="submit" class="btn btn-md btn-accent">send</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-xl-6">
+							<div class="footer-box">
+								<div class="footer-box__title">Come to our office</div>
+								<div class="box-text">
+									<p>Our specialists will be happy to tell you about the project, help you with choosing an apartment.
+										Let your dreams come
+										true!</p>
+								</div>
+								<a href="tel:(555) 654-3210" class="phone-company">(555) 654-3210</a>
+								<div class="h3">or</div>
+								<div class="footer-box__title">write to us</div>
+								<div class="box-text">
+									<p>Our specialists will contact you as soon as possible <br>and will be happy to answer all your
+										questions
+									</p>
+								</div>
+								<a href="contacts.html" class="btn btn-md btn-font btn-accent">contact us</a>
+							</div>
+						</div>
+						<div class="col-12 col-xl-6">
+							<div class="footer-address">
+								<div class="address-box">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#location"></use>
+									</svg>
+									<span>45 BROADWAY STE 530, NEW YORK, NY 10006-4012</span>
+								</div>
+								<div class="map">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.5259396201322!2d-74.01557352408241!3d40.706437137956385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a113c1507a3%3A0x53dbcbf433cd2193!2zNDUgQnJvYWR3YXkgIzUzMCwgTmV3IFlvcmssIE5ZIDEwMDA2LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1703367259589!5m2!1sru!2sua"
+										style="border:0;" allowfullscreen="" loading="lazy"
+										referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+								<div class="footer-address__bottom">
+									<div class="copyright">
+										<div class="copyright-date">2019-2023</div>
+										<img src="img/copyright.svg" alt="">
+										<span>all rights reserved</span>
+									</div>
+
+									<a href="https://elevenlab.ru" target="_blank" class="developer-link">
+										<span>developed by</span>
+										<img src="img/elevenlab.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<!-- Модальное окно -->
+	<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg></button>
+
+
+				<div class="modal-body">
+					<div class="event-description">
+						<div class="modal-subtitle">Registration for the event</div>
+						<div class="modal-title">Realtor: effective real estate transactions</div>
+						<div class="box-text">
+							<p>You will understand how to analyze <br>
+								the real estate market, evaluate the value of objects</p>
+						</div>
+					</div>
+
+					<div class="event-details">
+						<div class="event-details__date">
+							<p>July 17</p>
+							<p>11:00</p>
+						</div>
+						<div class="event-details__address">
+							<p>Zarechnaya str., 10 st1
+								Collection at 10:50</p>
+						</div>
+						<div class="box-text">
+							<p>(in the developer's sales department)</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<form method="post" class="form-registration">
+						<div class="row">
+							<div class="col-12 col-lg-4 mb-30">
+								<label class="label-checkbox">
+									<input type="checkbox" name="checkbox">
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">I will be at the event</span>
+								</label>
+							</div>
+							<div class="col-12 col-lg-8 mb-30">
+								<label class="label-checkbox">
+									<input type="checkbox" name="checkbox" checked>
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">the event is attended by an employee / colleague of the company</span>
+								</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-lg-4 mb-30">
+								<label>
+									<input type="text" placeholder="Full name" name="name">
+								</label>
+							</div>
+							<div class="col-12 col-lg-4 mb-30">
+								<label>
+									<input type="text" placeholder="Phone number" name="phone" required>
+								</label>
+							</div>
+							<div class="col-12 col-lg-4 mb-30">
+								<label>
+									<input type="text" placeholder="E-mail" name="mail" required>
+								</label>
+							</div>
+							<div class="col-12 col-lg-8 mb-30">
+								<label>
+									<input type="text" placeholder="Comments" name="comment">
+								</label>
+							</div>
+							<div class="col-12 col-lg-4">
+								<button type="submit" class="btn btn-accent">register</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
