@@ -174,8 +174,8 @@ label:last-child {
 
 textarea {
   resize: none;
-  padding: 12px 17px;
-  height: 103px;
+  padding: 24px 45px;
+  height: 128px;
 }
 
 button, .btn {
@@ -471,6 +471,10 @@ a.color-accent {
 
 .mb-40 {
   margin-bottom: 40px;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
 }
 
 .mb-50 {

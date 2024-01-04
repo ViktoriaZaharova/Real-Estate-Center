@@ -98,3 +98,7 @@ $(".datepicker").datepicker({
 	// changeMonth: true,
 	changeYear: true
 });
+
+Fancybox.bind("[data-fancybox]", {
+	// Your custom options
+});

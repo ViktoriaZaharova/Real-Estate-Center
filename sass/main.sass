@@ -532,3 +532,110 @@
 
 .event-filter
 	width: fit-content
+
+// product page
+.product-name
+	margin: 0 0 15px
+	font-weight: 500
+	font-size: 40px
+	font-family: $title-font
+	text-transform: uppercase
+	color: $blue
+
+.list-characteristics-product
+	color: $accent
+	font-size: 32px
+	font-weight: bold
+	sup
+		font-size: 24px
+	li
+		border-width: 3px
+
+.product-nav
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	li
+		margin: 0 30px 0 0
+		&:last-child
+			margin: 0
+		a
+			width: 30px
+			height: 30px
+			min-width: 30px
+			@include d-flex
+			fill: $accent
+			&:hover
+				fill: $blue
+
+.product-wrapper
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	border-radius: 20px
+	border: 1px solid #A19178
+	&__description
+		max-width: 504px
+		width: 100%
+		padding: 43px 49px
+		border-right: 1px solid $accent
+	&__details
+		width: calc(100% - 504px)
+		padding: 25px 55px 38px
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+	.nav-tabs-my
+		flex-direction: column
+		align-items: flex-start
+		margin: 16px 0 0
+		li
+			margin: 0 0 38px
+			&:last-child
+				margin: 0
+		.nav-link
+			padding: 0
+			border: none		
+	.tab-content
+		max-width: 446px
+		margin: 0 50px 0 auto	
+
+.product-location
+	max-width: 136px
+	width: 100%
+	@include d-flex						
+
+.product-characteristics
+	margin: 50px 0 0
+	font-size: 20px
+	li
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		margin: 0 0 30px
+		&:last-child
+			margin: 0	
+		p
+			font-weight: bold
+			margin: 0 30px 0 0
+			color: $blue	
+		sup
+			font-size: 14px		
+
+.form-order
+	margin: 63px 0 0
+	textarea
+		height: 146px
+		padding: 18px 20px
+	[type="submit"]
+		margin: 0 0 0 auto
+	.label-checkbox
+		max-width: 319px
+		width: fit-content
+		margin-right: auto
+		&:nth-child(2)
+			max-width: 252px
+		&:last-child
+			margin-right: 0	
+					
